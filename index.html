@@ -1,0 +1,127 @@
+<html>
+<head>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="tooltip">
+        <div class="name">Rune Vi</div>
+        <hr>
+        <div class="effect">Effet: <span>+5 Vitalité</span></div>
+        <div class="weight">Poids: <span>1</span></div>
+    </div>
+    <div class="smithmagic-interface">
+        <div class="item"><img draggable="false" src="img/6740.png" alt="Item"></div>
+        <div class="flex">
+            <div class="history">
+                <div class="box">
+                    <div><img class="rune" src="img/78054.png" alt="Ra Vi" data-name="Rune Ra Vi" data-effect="+50 Vitalité" data-weight="10"><span>+ 50 Vitalité</span></div>
+                    <div><img class="rune" src="img/78054.png" alt="Ra Vi" data-name="Rune Ra Vi" data-effect="+50 Vitalité" data-weight="10"><span>+ 40 Vitalité</span></div>
+                    <div><img class="rune" src="img/78054.png" alt="Ra Vi" data-name="Rune Ra Vi" data-effect="+50 Vitalité" data-weight="10"><span>+ 30 Vitalité</span></div>
+                    <div><img class="rune" src="img/78054.png" alt="Ra Vi" data-name="Rune Ra Vi" data-effect="+50 Vitalité" data-weight="10"><span>+ 20 Vitalité</span></div>
+                </div>
+            </div>
+            <div class="stats">
+                <table cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <th>Min</th>
+                            <th>Max</th>
+                            <th>Effets</th>
+                            <th></th>
+                            <th></th>
+                            <th>Pa</th>
+                            <th>Ra</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="stats-line sink" data-type="sink">
+                            <td class="min">-</td>
+                            <td class="max">-</td>
+                            <td class="effect">100</td>
+                            <td class="stat-name">Puits</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="stats-line success" data-type="vi">
+                            <td class="min">401</td>
+                            <td class="max">450</td>
+                            <td class="effect">350</td>
+                            <td class="stat-name">Vitalité</td>
+                            <td class="rune rune-na"><img draggable="false" onclick="_onRuneClick('vi', 0)" src="img/78052.png" alt="vi"></td>
+                            <td class="rune rune-pa"><img draggable="false" onclick="_onRuneClick('vi', 1)" src="img/78053.png" alt="pa vi"></td>
+                            <td class="rune rune-ra"><img draggable="false" onclick="_onRuneClick('vi', 2)" src="img/78054.png" alt="ra vi"></td>
+                        </tr>
+                        <tr class="stats-line failure" data-type="fo">
+                            <td class="min">71</td>
+                            <td class="max">100</td>
+                            <td class="effect">72</td>
+                            <td class="stat-name">Force</td>
+                            <td class="rune rune-na"><img draggable="false" onclick="_onRuneClick('fo', 0)" src="img/78043.png" alt="fo"></td>
+                            <td class="rune rune-pa"><img draggable="false" onclick="_onRuneClick('fo', 1)" src="img/78044.png" alt="pa fo"></td>
+                            <td class="rune rune-ra"><img draggable="false" onclick="_onRuneClick('fo', 2)" src="img/78045.png" alt="ra fo"></td>
+                        </tr>
+                        <tr class="stats-line under" data-type="cha">
+                            <td class="min">51</td>
+                            <td class="max">70</td>
+                            <td class="effect">40</td>
+                            <td class="stat-name">Chance</td>
+                            <td class="rune rune-na"><img draggable="false" onclick="_onRuneClick('cha', 0)" src="img/78040.png" alt="cha"></td>
+                            <td class="rune rune-pa"><img draggable="false" onclick="_onRuneClick('cha', 1)" src="img/78041.png" alt="pa cha"></td>
+                            <td class="rune rune-ra"><img draggable="false" onclick="_onRuneClick('cha', 2)" src="img/78042.png" alt="ra cha"></td>
+                        </tr>
+                        <tr class="stats-line over" data-type="age">
+                            <td class="min">51</td>
+                            <td class="max">70</td>
+                            <td class="effect">70</td>
+                            <td class="stat-name">Agilité</td>
+                            <td class="rune rune-na"><img draggable="false" onclick="_onRuneClick('age', 0)" src="img/78046.png" alt="age"></td>
+                            <td class="rune rune-pa"><img draggable="false" onclick="_onRuneClick('age', 1)" src="img/78047.png" alt="pa age"></td>
+                            <td class="rune rune-ra"><img draggable="false" onclick="_onRuneClick('age', 2)" src="img/78048.png" alt="ra age"></td>
+                        </tr>
+                        <tr class="stats-line" data-type="do-terre">
+                            <td class="min">16</td>
+                            <td class="max">20</td>
+                            <td class="effect">17</td>
+                            <td class="stat-name">Dommages terre</td>
+                            <td class="rune rune-na"><img draggable="false" onclick="_onRuneClick('do-terre', 0)" src="img/78065.png" alt="do terre"></td>
+                            <td class="rune rune-pa"><img draggable="false" onclick="_onRuneClick('do-terre', 1)" src="img/78066.png" alt="pa do terre"></td>
+                            <td></td>
+                        </tr>
+                        <tr class="stats-line exo" data-type="pa">
+                            <td class="min">-</td>
+                            <td class="max">-</td>
+                            <td class="effect">0</td>
+                            <td class="stat-name">PA</td>
+                            <td class="rune rune-na"><img draggable="false" onclick="_onRuneClick('pa', 0)" src="img/78055.png" alt="ga pa"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="inventory">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Pa</th>
+                            <th>Ra</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rune rune-na"><img draggable="false" onclick="_onRuneClick('ine', 0)" src="img/78037.png" alt="Ine" data-name="Rune Ine" data-effect="+1 Intelligence" data-weight="1"></td>
+                            <td class="rune rune-pa"><img draggable="false" onclick="_onRuneClick('ine', 1)" src="img/78038.png" alt="Pa Ine" data-name="Rune Pa Ine" data-effect="+3 Intelligence" data-weight="3"></td>
+                            <td class="rune rune-ra"><img draggable="false" onclick="_onRuneClick('ine', 2)" src="img/78039.png" alt="Ra Ine" data-name="Rune Ra Ine" data-effect="+10 Intelligence" data-weight="10"></td>
+                            <td>Intelligence</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
